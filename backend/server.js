@@ -10,7 +10,7 @@ const app = express();
 
 // ── MIDDLEWARE ────────────────────────────────────────
 app.use(cors({
-  origin:      process.env.CLIENT_URL || 'http://localhost:3000',
+  origin:      process.env.CLIENT_URL || 'https://hangman-8.netlify.app/',
   credentials: true,
 }));
 app.use(express.json());
